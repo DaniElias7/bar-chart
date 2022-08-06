@@ -22,7 +22,7 @@ fetch("https://raw.githubusercontent.com/FreeCodeCamp/ProjectReferenceData/maste
     .then(res => res.json())
     .then(data => {
 
-        let years = data.data.map(i => {
+       let years = data.data.map(i => {
             let Q;
             let temp =  i[0].substring(5, 7);
               switch (temp) {
@@ -40,10 +40,10 @@ fetch("https://raw.githubusercontent.com/FreeCodeCamp/ProjectReferenceData/maste
                             break;
               }
 
-       //      if (temp === "01") quarter = "Q1";
-       //      else if (temp === "04") quarter = "Q2";
-       //      else if (temp === "07") quarter = "Q3";
-       //      else if (temp === "10") quarter = "Q4";
+             if (temp === "01") quarter = "Q1";
+             else if (temp === "04") quarter = "Q2";
+             else if (temp === "07") quarter = "Q3";
+             else if (temp === "10") quarter = "Q4";
 
             return i[0].substring(0, 4) + " " + quarter;
         });
@@ -150,3 +150,4 @@ fetch("https://raw.githubusercontent.com/FreeCodeCamp/ProjectReferenceData/maste
 
 
     
+

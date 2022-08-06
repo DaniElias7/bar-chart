@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@100&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -9,8 +11,9 @@
     align-items: center;
     justify-content: center;
     font-family: "Roboto";
-    background-color: #708090;
+    background-color: #374047;
     background-size: 64px 128px;
+    font-family: Roboto;
 }
  h1 {
      text-align: center;
